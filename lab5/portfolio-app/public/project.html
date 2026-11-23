@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Опис проєкту">
+  <title>Проєкт — Андрій Джунківський</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/data.js" defer></script>
+  <script src="js/i18n.js" defer></script>
+  <script src="js/projects.js" defer></script>
+  <script src="js/form.js" defer></script>
+  <script src="js/api.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="index.html" aria-label="На головну">
+        <span class="logo__mark">АД</span>
+        <span>Андрій Джунківський</span>
+      </a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="main-nav" data-i18n-label="nav.menu" aria-label="Меню"><span></span></button>
+      <nav class="nav" id="main-nav" aria-label="Головне меню">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html" data-i18n="nav.home">Головна</a></li>
+          <li><a class="nav__link" href="about.html" data-i18n="nav.about">Про мене</a></li>
+          <li><a class="nav__link nav__link--active" href="projects.html" aria-current="page" data-i18n="nav.projects">Проєкти</a></li>
+          <li><a class="nav__link" href="contacts.html" data-i18n="nav.contacts">Контакти</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <div class="lang-switch" role="group" aria-label="Мова / Language">
+          <button type="button" class="is-active" data-lang="uk" aria-pressed="true">UA</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <a class="btn btn--primary btn--small" href="#" data-i18n="btn.cv">Завантажити CV</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div id="project-detail">
+      <div class="container page-head">
+        <a class="back-link" href="projects.html" data-i18n="btn.back">← Усі проєкти</a>
+        <h1 data-field="title">Task Tracker API</h1>
+        <ul class="tag-list" data-field="tags">
+          <li class="tag">Python</li><li class="tag">FastAPI</li><li class="tag">PostgreSQL</li><li class="tag">Docker</li>
+        </ul>
+        <div class="project-buttons">
+          <a class="btn btn--primary btn--small" href="https://github.com/" data-field="github" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a class="btn btn--outline btn--small" href="#" data-i18n="btn.demo">Демо ↗</a>
+        </div>
+      </div>
+      <div class="container project-layout">
+        <article class="project-content">
+          <div class="project-cover" aria-hidden="true" data-field="cover">API</div>
+          <section>
+            <h2 data-i18n="project.task">Задача</h2>
+            <p data-field="task">Створити REST API для керування задачами командою з розмежуванням доступу користувачів.</p>
+          </section>
+          <section>
+            <h2 data-i18n="project.solution">Рішення</h2>
+            <p data-field="solution">FastAPI + SQLAlchemy, PostgreSQL, автентифікація через JWT, хешування паролів bcrypt, валідація даних Pydantic.</p>
+          </section>
+          <section>
+            <h2 data-i18n="project.result">Результат</h2>
+            <p data-field="result">Покриття тестами 80 %, документація OpenAPI (Swagger), README з інструкцією розгортання.</p>
+          </section>
+        </article>
+        <aside class="info-box" aria-label="Інформація про проєкт">
+          <dl>
+            <dt data-i18n="project.role">Роль</dt><dd data-field="role">Автор, backend</dd>
+            <dt data-i18n="project.term">Термін</dt><dd data-field="term">3 тижні, 2026</dd>
+            <dt data-i18n="project.type">Тип</dt><dd data-field="type">Особистий проєкт</dd>
+          </dl>
+        </aside>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="footer-meta">&copy; 2026 Андрій Джунківський</p>
+      <ul class="footer-links">
+        <li><a href="https://github.com/">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+        <li><a href="https://t.me/">Telegram</a></li>
+        <li><a href="mailto:andrii@example.com">Email</a></li>
+      </ul>
+      <p class="footer-meta"><a href="admin.html" data-i18n="footer.privacy">Політика конфіденційності · Адмін</a></p>
+    </div>
+  </footer>
+</body>
+</html>

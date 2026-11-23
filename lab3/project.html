@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Опис проєкту Task Tracker API">
+  <title>Task Tracker API — Андрій Джунківський</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="index.html" aria-label="На головну">
+        <span class="logo__mark">АД</span>
+        <span>Андрій Джунківський</span>
+      </a>
+      <input class="menu-toggle" type="checkbox" id="menu-toggle">
+      <label class="burger" for="menu-toggle"><span></span><span class="visually-hidden">Меню</span></label>
+      <nav class="nav" aria-label="Головне меню">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html">Головна</a></li>
+          <li><a class="nav__link" href="about.html">Про мене</a></li>
+          <li><a class="nav__link nav__link--active" href="projects.html" aria-current="page">Проєкти</a></li>
+          <li><a class="nav__link" href="contacts.html">Контакти</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <div class="lang-switch">
+          <a class="is-active" href="#" lang="uk">UA</a>
+          <a href="#" lang="en">EN</a>
+        </div>
+        <a class="btn btn--primary btn--small" href="#">Завантажити CV</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container page-head">
+      <a class="back-link" href="projects.html">← Усі проєкти</a>
+      <h1>Task Tracker API</h1>
+      <ul class="tag-list">
+        <li class="tag">Python</li><li class="tag">FastAPI</li><li class="tag">PostgreSQL</li><li class="tag">Docker</li><li class="tag">JWT</li>
+      </ul>
+      <div class="project-buttons">
+        <a class="btn btn--primary btn--small" href="https://github.com/">GitHub ↗</a>
+        <a class="btn btn--outline btn--small" href="#">Демо ↗</a>
+      </div>
+    </div>
+    <div class="container project-layout">
+      <article class="project-content">
+        <div class="project-cover" aria-hidden="true">API</div>
+        <section>
+          <h2>Задача</h2>
+          <p>Створити REST API для керування задачами командою з розмежуванням доступу користувачів.</p>
+        </section>
+        <section>
+          <h2>Рішення</h2>
+          <p>FastAPI + SQLAlchemy, PostgreSQL, автентифікація через JWT, хешування паролів bcrypt, валідація даних Pydantic. Сервіс і база запускаються однією командою docker compose up.</p>
+        </section>
+        <section>
+          <h2>Результат</h2>
+          <p>Покриття тестами 80 %, документація OpenAPI (Swagger), README з інструкцією розгортання.</p>
+        </section>
+      </article>
+      <aside class="info-box" aria-label="Інформація про проєкт">
+        <dl>
+          <dt>Роль</dt><dd>Автор, backend</dd>
+          <dt>Термін</dt><dd>3 тижні, 2026</dd>
+          <dt>Тип</dt><dd>Особистий проєкт</dd>
+        </dl>
+      </aside>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="footer-meta">&copy; 2026 Андрій Джунківський</p>
+      <ul class="footer-links">
+        <li><a href="https://github.com/">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+        <li><a href="https://t.me/">Telegram</a></li>
+        <li><a href="mailto:andrii@example.com">Email</a></li>
+      </ul>
+      <p class="footer-meta">Політика конфіденційності · Адмін</p>
+    </div>
+  </footer>
+</body>
+</html>

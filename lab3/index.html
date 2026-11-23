@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Портфоліо Junior Python / Backend розробника Андрія Джунківського">
+  <title>Головна — Андрій Джунківський</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="index.html" aria-label="На головну">
+        <span class="logo__mark">АД</span>
+        <span>Андрій Джунківський</span>
+      </a>
+      <input class="menu-toggle" type="checkbox" id="menu-toggle">
+      <label class="burger" for="menu-toggle"><span></span><span class="visually-hidden">Меню</span></label>
+      <nav class="nav" aria-label="Головне меню">
+        <ul class="nav__list">
+          <li><a class="nav__link nav__link--active" href="index.html" aria-current="page">Головна</a></li>
+          <li><a class="nav__link" href="about.html">Про мене</a></li>
+          <li><a class="nav__link" href="projects.html">Проєкти</a></li>
+          <li><a class="nav__link" href="contacts.html">Контакти</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <div class="lang-switch">
+          <a class="is-active" href="#" lang="uk">UA</a>
+          <a href="#" lang="en">EN</a>
+        </div>
+        <a class="btn btn--primary btn--small" href="#">Завантажити CV</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="container hero" aria-labelledby="hero-title">
+      <div class="hero__text">
+        <span class="badge">Відкритий до пропозицій</span>
+        <h1 id="hero-title">Junior Python / Backend Developer</h1>
+        <p class="hero__lead">Студент 2 курсу спеціальності «Кібербезпека» (ДТЕУ, Київ). Пишу backend на Python, пакую сервіси в Docker і думаю про безпеку з першого рядка коду.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="projects.html">Переглянути проєкти</a>
+          <a class="btn btn--outline" href="#">Завантажити CV</a>
+          <a class="btn btn--ghost" href="contacts.html">Зв'язатися</a>
+        </div>
+        <div class="hero__stack">
+          <span>Основний стек:</span>
+          <ul class="tag-list">
+            <li class="tag tag--grey">Python</li><li class="tag tag--grey">FastAPI</li><li class="tag tag--grey">Docker</li><li class="tag tag--grey">PostgreSQL</li><li class="tag tag--grey">Linux</li><li class="tag tag--grey">Git</li>
+          </ul>
+        </div>
+      </div>
+      <div class="hero__avatar" aria-hidden="true">АД</div>
+    </section>
+
+    <section class="section section--alt" aria-labelledby="featured-title">
+      <div class="container">
+        <div class="section__head">
+          <h2 id="featured-title">Обрані проєкти</h2>
+          <a class="link-arrow" href="projects.html">Усі проєкти →</a>
+        </div>
+        <div class="cards-grid">
+          <article class="card">
+            <div class="card__cover" aria-hidden="true">API</div>
+            <div class="card__body">
+              <h3 class="card__title">Task Tracker API</h3>
+              <p class="card__text">REST API на FastAPI з PostgreSQL: JWT-автентифікація, CRUD задач, запуск через Docker Compose.</p>
+              <ul class="tag-list"><li class="tag">Python</li><li class="tag">FastAPI</li><li class="tag">Docker</li><li class="tag">PostgreSQL</li></ul>
+              <p class="card__role">Роль: автор, backend</p>
+              <div class="card__actions">
+                <a class="btn btn--outline btn--small" href="https://github.com/">GitHub ↗</a>
+                <a class="btn btn--ghost btn--small" href="project.html">Детальніше →</a>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__cover" aria-hidden="true">LOG</div>
+            <div class="card__body">
+              <h3 class="card__title">Log Analyzer</h3>
+              <p class="card__text">Python-скрипт для аналізу auth.log та логів nginx: виявляє спроби brute-force і формує звіт у CSV.</p>
+              <ul class="tag-list"><li class="tag">Python</li><li class="tag">Docker</li><li class="tag">Security</li></ul>
+              <p class="card__role">Роль: автор (особистий проєкт)</p>
+              <div class="card__actions">
+                <a class="btn btn--outline btn--small" href="https://github.com/">GitHub ↗</a>
+                <a class="btn btn--ghost btn--small" href="project.html">Детальніше →</a>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__cover" aria-hidden="true">***</div>
+            <div class="card__body">
+              <h3 class="card__title">Password Checker</h3>
+              <p class="card__text">Вебутиліта перевірки надійності паролів: ентропія та перевірка витоків через k-anonymity.</p>
+              <ul class="tag-list"><li class="tag">Python</li><li class="tag">Flask</li><li class="tag">Security</li></ul>
+              <p class="card__role">Роль: автор</p>
+              <div class="card__actions">
+                <a class="btn btn--outline btn--small" href="https://github.com/">GitHub ↗</a>
+                <a class="btn btn--ghost btn--small" href="project.html">Детальніше →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta" aria-labelledby="cta-title">
+      <div class="container">
+        <h2 id="cta-title">Шукаю першу роботу Junior Python Developer</h2>
+        <p>Офіс у Києві, гібрид або віддалено. Відповідаю на повідомлення протягом 24 годин.</p>
+        <a class="btn btn--primary" href="contacts.html">Написати мені</a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="footer-meta">&copy; 2026 Андрій Джунківський</p>
+      <ul class="footer-links">
+        <li><a href="https://github.com/">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+        <li><a href="https://t.me/">Telegram</a></li>
+        <li><a href="mailto:andrii@example.com">Email</a></li>
+      </ul>
+      <p class="footer-meta">Політика конфіденційності · Адмін</p>
+    </div>
+  </footer>
+</body>
+</html>

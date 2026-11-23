@@ -1,0 +1,148 @@
+/* ============ responsive.css — медіазапити ============ */
+
+/* Планшет: до 1024px */
+@media (max-width: 1024px) {
+  .container {
+    padding-inline: var(--space-l);
+  }
+
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero {
+    padding-block: 4rem;
+  }
+
+  .hero__avatar {
+    width: min(100%, 260px);
+  }
+
+  .header-actions .btn {
+    display: none;
+  }
+
+  .nav__link {
+    padding: 0.45rem 0.6rem;
+  }
+
+  .project-layout,
+  .contacts-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .about-layout {
+    grid-template-columns: 1fr 1.6fr;
+  }
+}
+
+/* Мобільний: до 767px */
+@media (max-width: 767px) {
+  .container {
+    padding-inline: var(--space-m);
+  }
+
+  .section {
+    padding-block: 3.5rem;
+  }
+
+  /* бургер-меню */
+  .burger {
+    display: grid;
+    order: 3;
+  }
+
+  .site-header__inner {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    min-height: 64px;
+  }
+
+  .logo {
+    order: 1;
+    font-size: 0.875rem;
+  }
+
+  .logo__mark {
+    width: 32px;
+    height: 32px;
+  }
+
+  .header-actions {
+    order: 2;
+  }
+
+  .nav {
+    display: none;
+    order: 4;
+    width: 100%;
+    padding-bottom: var(--space-m);
+  }
+
+  .nav__list {
+    flex-direction: column;
+  }
+
+  .nav.is-open {
+    display: block;
+  }
+
+  .header-actions {
+    margin-left: auto;
+  }
+
+  .page-head {
+    padding-block: 2.5rem 1.5rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding-block: 3rem;
+  }
+
+  .hero__avatar {
+    grid-row: 1;
+    justify-self: start;
+    width: 120px;
+    border-width: 4px;
+    font-size: 2rem;
+  }
+
+  .hero__actions .btn {
+    flex: 1 1 100%;
+  }
+
+  .cards-grid,
+  .about-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .about-photo {
+    max-width: 200px;
+  }
+
+  .timeline__item {
+    grid-template-columns: 1fr;
+    gap: var(--space-xs);
+  }
+
+  .project-cover {
+    height: 200px;
+  }
+
+  .section__head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-footer__inner {
+    flex-direction: column;
+    justify-content: center;
+    padding-block: var(--space-l);
+    text-align: center;
+  }
+
+  .form-card {
+    padding: var(--space-l);
+  }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Проєкти Андрія Джунківського: Python, Docker, Security">
+  <title>Проєкти — Андрій Джунківський</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/data.js" defer></script>
+  <script src="js/i18n.js" defer></script>
+  <script src="js/projects.js" defer></script>
+  <script src="js/form.js" defer></script>
+  <script src="js/api.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="index.html" aria-label="На головну">
+        <span class="logo__mark">АД</span>
+        <span>Андрій Джунківський</span>
+      </a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="main-nav" data-i18n-label="nav.menu" aria-label="Меню"><span></span></button>
+      <nav class="nav" id="main-nav" aria-label="Головне меню">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html" data-i18n="nav.home">Головна</a></li>
+          <li><a class="nav__link" href="about.html" data-i18n="nav.about">Про мене</a></li>
+          <li><a class="nav__link nav__link--active" href="projects.html" aria-current="page" data-i18n="nav.projects">Проєкти</a></li>
+          <li><a class="nav__link" href="contacts.html" data-i18n="nav.contacts">Контакти</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <div class="lang-switch" role="group" aria-label="Мова / Language">
+          <button type="button" class="is-active" data-lang="uk" aria-pressed="true">UA</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <a class="btn btn--primary btn--small" href="#" data-i18n="btn.cv">Завантажити CV</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section--alt">
+      <div class="container page-head page-head--list">
+        <h1 data-i18n="projects.title">Проєкти</h1>
+        <p data-i18n="projects.lead">Реальні проєкти з кодом на GitHub. Оберіть технологію, щоб відфільтрувати список.</p>
+        <ul class="chips" id="project-filters" aria-label="Фільтр за технологією"></ul>
+        <p class="found" id="projects-count" aria-live="polite"></p>
+        <h2 class="visually-hidden">Список проєктів</h2>
+        <div class="cards-grid" id="projects-grid">
+          <noscript><p class="empty-state">Для перегляду списку проєктів увімкніть JavaScript.</p></noscript>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="footer-meta">&copy; 2026 Андрій Джунківський</p>
+      <ul class="footer-links">
+        <li><a href="https://github.com/">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+        <li><a href="https://t.me/">Telegram</a></li>
+        <li><a href="mailto:andrii@example.com">Email</a></li>
+      </ul>
+      <p class="footer-meta"><a href="admin.html" data-i18n="footer.privacy">Політика конфіденційності · Адмін</a></p>
+    </div>
+  </footer>
+</body>
+</html>

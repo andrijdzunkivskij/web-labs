@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Портфоліо Junior Python / Backend розробника Андрія Джунківського">
+  <title>Головна — Андрій Джунківський</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/data.js" defer></script>
+  <script src="js/i18n.js" defer></script>
+  <script src="js/projects.js" defer></script>
+  <script src="js/form.js" defer></script>
+  <script src="js/api.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="index.html" aria-label="На головну">
+        <span class="logo__mark">АД</span>
+        <span>Андрій Джунківський</span>
+      </a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="main-nav" data-i18n-label="nav.menu" aria-label="Меню"><span></span></button>
+      <nav class="nav" id="main-nav" aria-label="Головне меню">
+        <ul class="nav__list">
+          <li><a class="nav__link nav__link--active" href="index.html" aria-current="page" data-i18n="nav.home">Головна</a></li>
+          <li><a class="nav__link" href="about.html" data-i18n="nav.about">Про мене</a></li>
+          <li><a class="nav__link" href="projects.html" data-i18n="nav.projects">Проєкти</a></li>
+          <li><a class="nav__link" href="contacts.html" data-i18n="nav.contacts">Контакти</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <div class="lang-switch" role="group" aria-label="Мова / Language">
+          <button type="button" class="is-active" data-lang="uk" aria-pressed="true">UA</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <a class="btn btn--primary btn--small" href="#" data-i18n="btn.cv">Завантажити CV</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="container hero" aria-labelledby="hero-title">
+      <div class="hero__text">
+        <span class="badge" data-i18n="hero.badge">Відкритий до пропозицій</span>
+        <h1 id="hero-title">Junior Python / Backend Developer</h1>
+        <p class="hero__lead" data-i18n="hero.lead">Студент 2 курсу спеціальності «Кібербезпека» (ДТЕУ, Київ). Пишу backend на Python, пакую сервіси в Docker і думаю про безпеку з першого рядка коду.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="projects.html" data-i18n="btn.projects">Переглянути проєкти</a>
+          <a class="btn btn--outline" href="#" data-i18n="btn.cv">Завантажити CV</a>
+          <a class="btn btn--ghost" href="contacts.html" data-i18n="btn.contact">Зв'язатися</a>
+        </div>
+        <div class="hero__stack">
+          <span data-i18n="hero.stack">Основний стек:</span>
+          <ul class="tag-list">
+            <li class="tag tag--grey">Python</li><li class="tag tag--grey">FastAPI</li><li class="tag tag--grey">Docker</li><li class="tag tag--grey">PostgreSQL</li><li class="tag tag--grey">Linux</li><li class="tag tag--grey">Git</li>
+          </ul>
+        </div>
+      </div>
+      <div class="hero__avatar" aria-hidden="true">АД</div>
+    </section>
+
+    <section class="section section--alt" aria-labelledby="featured-title">
+      <div class="container">
+        <div class="section__head">
+          <h2 id="featured-title" data-i18n="home.featured">Обрані проєкти</h2>
+          <a class="link-arrow" href="projects.html" data-i18n="btn.all">Усі проєкти →</a>
+        </div>
+        <div class="cards-grid" id="featured-grid" aria-live="polite">
+          <noscript><p class="empty-state">Для перегляду списку проєктів увімкніть JavaScript.</p></noscript>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta" aria-labelledby="cta-title">
+      <div class="container">
+        <h2 id="cta-title" data-i18n="home.cta.title">Шукаю першу роботу Junior Python Developer</h2>
+        <p data-i18n="home.cta.text">Офіс у Києві, гібрид або віддалено. Відповідаю на повідомлення протягом 24 годин.</p>
+        <a class="btn btn--primary" href="contacts.html" data-i18n="btn.write">Написати мені</a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="footer-meta">&copy; 2026 Андрій Джунківський</p>
+      <ul class="footer-links">
+        <li><a href="https://github.com/">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+        <li><a href="https://t.me/">Telegram</a></li>
+        <li><a href="mailto:andrii@example.com">Email</a></li>
+      </ul>
+      <p class="footer-meta"><a href="admin.html" data-i18n="footer.privacy">Політика конфіденційності · Адмін</a></p>
+    </div>
+  </footer>
+</body>
+</html>

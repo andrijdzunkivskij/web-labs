@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Контакти Андрія Джунківського">
+  <title>Контакти — Андрій Джунківський</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="index.html" aria-label="На головну">
+        <span class="logo__mark">АД</span>
+        <span>Андрій Джунківський</span>
+      </a>
+      <input class="menu-toggle" type="checkbox" id="menu-toggle">
+      <label class="burger" for="menu-toggle"><span></span><span class="visually-hidden">Меню</span></label>
+      <nav class="nav" aria-label="Головне меню">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html">Головна</a></li>
+          <li><a class="nav__link" href="about.html">Про мене</a></li>
+          <li><a class="nav__link" href="projects.html">Проєкти</a></li>
+          <li><a class="nav__link nav__link--active" href="contacts.html" aria-current="page">Контакти</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <div class="lang-switch">
+          <a class="is-active" href="#" lang="uk">UA</a>
+          <a href="#" lang="en">EN</a>
+        </div>
+        <a class="btn btn--primary btn--small" href="#">Завантажити CV</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container page-head">
+      <h1>Контакти</h1>
+      <p>Відкритий до пропозицій щодо роботи Junior Python Developer. Відповідаю протягом 24 годин.</p>
+    </div>
+    <div class="container contacts-layout">
+      <section aria-labelledby="links-title">
+        <h2 id="links-title" class="visually-hidden">Способи зв'язку</h2>
+        <ul class="contact-list">
+          <li class="contact-item"><span>Email</span><a href="mailto:andrii@example.com">andrii@example.com</a></li>
+          <li class="contact-item"><span>Telegram</span><a href="https://t.me/">@dzhunkivskyi</a></li>
+          <li class="contact-item"><span>GitHub</span><a href="https://github.com/">github.com/dzhunkivskyi</a></li>
+          <li class="contact-item"><span>LinkedIn</span><a href="https://www.linkedin.com/">linkedin.com/in/dzhunkivskyi</a></li>
+          <li class="contact-item"><span>Місто</span><strong>Київ, Україна</strong></li>
+        </ul>
+      </section>
+      <section class="form-card" aria-labelledby="form-title">
+        <h2 id="form-title">Напишіть мені</h2>
+        <form class="form" action="#" method="post">
+          <div class="form__field">
+            <label for="name">Ім'я</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="form__field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="form__field">
+            <label for="message">Повідомлення</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <label class="form__checkbox"><input type="checkbox" name="agree" required> Погоджуюся з політикою конфіденційності</label>
+          <button class="btn btn--primary" type="submit">Надіслати</button>
+        </form>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="footer-meta">&copy; 2026 Андрій Джунківський</p>
+      <ul class="footer-links">
+        <li><a href="https://github.com/">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+        <li><a href="https://t.me/">Telegram</a></li>
+        <li><a href="mailto:andrii@example.com">Email</a></li>
+      </ul>
+      <p class="footer-meta">Політика конфіденційності · Адмін</p>
+    </div>
+  </footer>
+</body>
+</html>

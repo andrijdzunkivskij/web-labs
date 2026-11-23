@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Адмін-панель — Андрій Джунківський</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/admin.css">
+  <script src="js/admin.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="index.html">
+        <span class="logo__mark">АД</span>
+        <span>Адмін-панель</span>
+      </a>
+      <button class="btn btn--ghost btn--small" type="button" id="logout-btn" hidden>Вийти</button>
+    </div>
+  </header>
+
+  <main class="container admin">
+    <section class="admin-login form-card" id="login-section" aria-labelledby="login-title">
+      <h1 id="login-title">Вхід</h1>
+      <form class="form" id="login-form" novalidate>
+        <div class="form__field">
+          <label for="token">Токен доступу</label>
+          <input id="token" name="token" type="password" autocomplete="current-password" required>
+        </div>
+        <p class="form-status" id="login-status" role="alert"></p>
+        <button class="btn btn--primary" type="submit">Увійти</button>
+      </form>
+    </section>
+
+    <div id="admin-section" hidden>
+      <div class="admin-tabs" role="tablist" aria-label="Розділи">
+        <button class="chip chip--active" type="button" role="tab" id="tab-projects" aria-selected="true" aria-controls="panel-projects">Проєкти</button>
+        <button class="chip" type="button" role="tab" id="tab-messages" aria-selected="false" aria-controls="panel-messages">Повідомлення <span id="unread-count"></span></button>
+      </div>
+      <p class="form-status" id="admin-status" role="status"></p>
+
+      <section id="panel-projects" role="tabpanel" aria-labelledby="tab-projects">
+        <div class="section__head">
+          <h2>Проєкти</h2>
+          <button class="btn btn--primary btn--small" type="button" id="new-project-btn">+ Новий проєкт</button>
+        </div>
+        <div class="table-wrap">
+          <table class="admin-table">
+            <thead>
+              <tr><th scope="col">Назва</th><th scope="col">Slug</th><th scope="col">Теги</th><th scope="col">На головній</th><th scope="col">Дії</th></tr>
+            </thead>
+            <tbody id="projects-tbody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="panel-messages" role="tabpanel" aria-labelledby="tab-messages" hidden>
+        <h2>Повідомлення з форми</h2>
+        <ul class="message-list" id="messages-list"></ul>
+      </section>
+    </div>
+
+    <dialog class="admin-dialog" id="project-dialog" aria-labelledby="dialog-title">
+      <form class="form" id="project-form" method="dialog" novalidate>
+        <h2 id="dialog-title">Проєкт</h2>
+        <div class="admin-form-grid" id="project-fields"></div>
+        <p class="form-status" id="project-status" role="alert"></p>
+        <div class="admin-dialog__actions">
+          <button class="btn btn--ghost" type="button" id="cancel-btn">Скасувати</button>
+          <button class="btn btn--primary" type="submit">Зберегти</button>
+        </div>
+      </form>
+    </dialog>
+  </main>
+</body>
+</html>

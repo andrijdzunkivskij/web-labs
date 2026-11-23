@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Проєкти Андрія Джунківського: Python, Docker, Security">
+  <title>Проєкти — Андрій Джунківський</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="index.html" aria-label="На головну">
+        <span class="logo__mark">АД</span>
+        <span>Андрій Джунківський</span>
+      </a>
+      <input class="menu-toggle" type="checkbox" id="menu-toggle">
+      <label class="burger" for="menu-toggle"><span></span><span class="visually-hidden">Меню</span></label>
+      <nav class="nav" aria-label="Головне меню">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html">Головна</a></li>
+          <li><a class="nav__link" href="about.html">Про мене</a></li>
+          <li><a class="nav__link nav__link--active" href="projects.html" aria-current="page">Проєкти</a></li>
+          <li><a class="nav__link" href="contacts.html">Контакти</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <div class="lang-switch">
+          <a class="is-active" href="#" lang="uk">UA</a>
+          <a href="#" lang="en">EN</a>
+        </div>
+        <a class="btn btn--primary btn--small" href="#">Завантажити CV</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section--alt">
+      <div class="container page-head page-head--list">
+        <h1>Проєкти</h1>
+        <p>Реальні проєкти з кодом на GitHub. Оберіть технологію, щоб відфільтрувати список.</p>
+        <ul class="chips" aria-label="Фільтр за технологією">
+          <li><a class="chip chip--active" href="#">Усі</a></li>
+          <li><a class="chip" href="#">Python</a></li>
+          <li><a class="chip" href="#">Docker</a></li>
+          <li><a class="chip" href="#">FastAPI</a></li>
+          <li><a class="chip" href="#">Security</a></li>
+          <li><a class="chip" href="#">C#</a></li>
+          <li><a class="chip" href="#">JavaScript</a></li>
+          <li><a class="chip" href="#">Go</a></li>
+        </ul>
+        <p class="found">Знайдено проєктів: 6</p>
+        <div class="cards-grid">
+          <article class="card">
+            <div class="card__cover" aria-hidden="true">API</div>
+            <div class="card__body">
+              <h3 class="card__title">Task Tracker API</h3>
+              <p class="card__text">REST API на FastAPI з PostgreSQL: JWT-автентифікація, CRUD задач, запуск через Docker Compose.</p>
+              <ul class="tag-list"><li class="tag">Python</li><li class="tag">FastAPI</li><li class="tag">Docker</li><li class="tag">PostgreSQL</li></ul>
+              <p class="card__role">Роль: автор, backend</p>
+              <div class="card__actions">
+                <a class="btn btn--outline btn--small" href="https://github.com/">GitHub ↗</a>
+                <a class="btn btn--ghost btn--small" href="project.html">Детальніше →</a>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__cover" aria-hidden="true">LOG</div>
+            <div class="card__body">
+              <h3 class="card__title">Log Analyzer</h3>
+              <p class="card__text">Python-скрипт для аналізу auth.log та логів nginx: виявляє спроби brute-force і формує звіт у CSV.</p>
+              <ul class="tag-list"><li class="tag">Python</li><li class="tag">Docker</li><li class="tag">Security</li></ul>
+              <p class="card__role">Роль: автор (особистий проєкт)</p>
+              <div class="card__actions">
+                <a class="btn btn--outline btn--small" href="https://github.com/">GitHub ↗</a>
+                <a class="btn btn--ghost btn--small" href="project.html">Детальніше →</a>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__cover" aria-hidden="true">***</div>
+            <div class="card__body">
+              <h3 class="card__title">Password Checker</h3>
+              <p class="card__text">Вебутиліта перевірки надійності паролів: ентропія та перевірка витоків через k-anonymity.</p>
+              <ul class="tag-list"><li class="tag">Python</li><li class="tag">Flask</li><li class="tag">Security</li></ul>
+              <p class="card__role">Роль: автор</p>
+              <div class="card__actions">
+                <a class="btn btn--outline btn--small" href="https://github.com/">GitHub ↗</a>
+                <a class="btn btn--ghost btn--small" href="project.html">Детальніше →</a>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__cover" aria-hidden="true">C#</div>
+            <div class="card__body">
+              <h3 class="card__title">Inventory OOP</h3>
+              <p class="card__text">Консольний застосунок обліку товарів на C# з використанням принципів ООП і патернів.</p>
+              <ul class="tag-list"><li class="tag">C#</li><li class="tag">OOP</li></ul>
+              <p class="card__role">Роль: автор (навчальний проєкт)</p>
+              <div class="card__actions">
+                <a class="btn btn--outline btn--small" href="https://github.com/">GitHub ↗</a>
+                <a class="btn btn--ghost btn--small" href="project.html">Детальніше →</a>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__cover" aria-hidden="true">?!</div>
+            <div class="card__body">
+              <h3 class="card__title">Phishing Quiz</h3>
+              <p class="card__text">Інтерактивна вікторина для навчання розпізнаванню фішингових листів.</p>
+              <ul class="tag-list"><li class="tag">JavaScript</li><li class="tag">HTML/CSS</li><li class="tag">Security</li></ul>
+              <p class="card__role">Роль: автор, frontend</p>
+              <div class="card__actions">
+                <a class="btn btn--outline btn--small" href="https://github.com/">GitHub ↗</a>
+                <a class="btn btn--ghost btn--small" href="project.html">Детальніше →</a>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__cover" aria-hidden="true">WEB</div>
+            <div class="card__body">
+              <h3 class="card__title">Portfolio Website</h3>
+              <p class="card__text">Цей сайт: адаптивна верстка, контактна форма із захистом від спаму, Docker-деплой.</p>
+              <ul class="tag-list"><li class="tag">JavaScript</li><li class="tag">HTML/CSS</li><li class="tag">Docker</li></ul>
+              <p class="card__role">Роль: автор</p>
+              <div class="card__actions">
+                <a class="btn btn--outline btn--small" href="https://github.com/">GitHub ↗</a>
+                <a class="btn btn--ghost btn--small" href="project.html">Детальніше →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="footer-meta">&copy; 2026 Андрій Джунківський</p>
+      <ul class="footer-links">
+        <li><a href="https://github.com/">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+        <li><a href="https://t.me/">Telegram</a></li>
+        <li><a href="mailto:andrii@example.com">Email</a></li>
+      </ul>
+      <p class="footer-meta">Політика конфіденційності · Адмін</p>
+    </div>
+  </footer>
+</body>
+</html>

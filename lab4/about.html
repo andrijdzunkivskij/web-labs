@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Про Андрія Джунківського: освіта та навички">
+  <title>Про мене — Андрій Джунківський</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/data.js" defer></script>
+  <script src="js/i18n.js" defer></script>
+  <script src="js/projects.js" defer></script>
+  <script src="js/form.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="index.html" aria-label="На головну">
+        <span class="logo__mark">АД</span>
+        <span>Андрій Джунківський</span>
+      </a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="main-nav" data-i18n-label="nav.menu" aria-label="Меню"><span></span></button>
+      <nav class="nav" id="main-nav" aria-label="Головне меню">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html" data-i18n="nav.home">Головна</a></li>
+          <li><a class="nav__link nav__link--active" href="about.html" aria-current="page" data-i18n="nav.about">Про мене</a></li>
+          <li><a class="nav__link" href="projects.html" data-i18n="nav.projects">Проєкти</a></li>
+          <li><a class="nav__link" href="contacts.html" data-i18n="nav.contacts">Контакти</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <div class="lang-switch" role="group" aria-label="Мова / Language">
+          <button type="button" class="is-active" data-lang="uk" aria-pressed="true">UA</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <a class="btn btn--primary btn--small" href="#" data-i18n="btn.cv">Завантажити CV</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container page-head">
+      <h1 data-i18n="about.title">Про мене</h1>
+      <p data-i18n="about.lead">Коротко про те, хто я, що вмію і куди рухаюся.</p>
+    </div>
+    <section class="container about-layout section" aria-label="Біографія">
+      <div class="about-photo" aria-hidden="true">АД</div>
+      <div>
+        <h2 data-i18n="about.hello">Привіт! Я Андрій</h2>
+        <p data-i18n="about.p1">Навчаюся на 2 курсі спеціальності «Кібербезпека» на факультеті інформаційних технологій ДТЕУ (Київ). Мене цікавить backend-розробка на Python і те, як робити сервіси одразу безпечними.</p>
+        <p data-i18n="about.p2">У вільний час роблю власні проєкти: API, утиліти для аналізу логів, інструменти перевірки паролів. Вивчаю Docker, Linux і готуюся до сертифікації з blue team.</p>
+        <a class="btn btn--primary" href="#" data-i18n="btn.cv">Завантажити CV</a>
+      </div>
+    </section>
+    <section class="section section--alt" aria-labelledby="skills-title">
+      <div class="container">
+        <h2 id="skills-title" data-i18n="about.skills">Навички</h2>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>Backend</h3>
+            <ul class="tag-list"><li class="tag">Python</li><li class="tag">FastAPI</li><li class="tag">Flask</li><li class="tag">SQLAlchemy</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>DevOps</h3>
+            <ul class="tag-list"><li class="tag">Docker</li><li class="tag">Linux</li><li class="tag">Git</li><li class="tag">nginx</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3 data-i18n="about.db">Бази даних</h3>
+            <ul class="tag-list"><li class="tag">PostgreSQL</li><li class="tag">SQLite</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3 data-i18n="about.security">Безпека</h3>
+            <ul class="tag-list"><li class="tag">OWASP Top 10</li><li class="tag">SIEM</li><li class="tag">Log analysis</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="edu-title">
+      <div class="container">
+        <h2 id="edu-title" data-i18n="about.edu">Освіта</h2>
+        <ol class="timeline">
+          <li class="timeline__item">
+            <time datetime="2025">2025 — 2029</time>
+            <div>
+              <h3>Державний торговельно-економічний університет</h3>
+              <p>Факультет інформаційних технологій, спеціальність «Кібербезпека», бакалавр.</p>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <time datetime="2026">2026</time>
+            <div>
+              <h3>Self-study</h3>
+              <p>Python, Docker, Blue Team Level 1.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="footer-meta">&copy; 2026 Андрій Джунківський</p>
+      <ul class="footer-links">
+        <li><a href="https://github.com/">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+        <li><a href="https://t.me/">Telegram</a></li>
+        <li><a href="mailto:andrii@example.com">Email</a></li>
+      </ul>
+      <p class="footer-meta"><span data-i18n="footer.privacy">Політика конфіденційності · Адмін</span></p>
+    </div>
+  </footer>
+</body>
+</html>
